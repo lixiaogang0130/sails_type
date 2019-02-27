@@ -18,6 +18,13 @@ module.exports.custom = {
   // mailgunDomain: 'transactional-mail.example.com',
   // mailgunSecret: 'key-testkeyb183848139913858e8abd9a3',
   // stripeSecret: 'sk_test_Zzd814nldl91104qor5911gjald',
-  // …
+  database:{
+    host:'127.0.0.1',
+    user:'root',
+    password:'1qazxsw@',
+    database:'yourbay_test',
+    port:3306,
+    charset: "utf8mb4_general_ci"
+  },
 
 };

@@ -32,7 +32,9 @@ export = function(c: number = 0, d: any = null, e: any = null, s: number = -1) {
   } else {
     reply.status = c === 1000 ? 1 : 2;
     reply.msg = Mapping.resMapping.get(c) || Mapping.resMapping.get(0);
-    reply.data = d;
+    if(c===1000){
+      reply.data = d;
+    }
   }
   res.status(200).json(reply);
   return Router(req, res);

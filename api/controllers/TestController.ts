@@ -19,7 +19,7 @@ class Test extends CoreModule.CoreClass{
     let aa = await this.s.test.asdb();
     this.l.info('233333333333333');
     this.l.info('233333333333333')
-   return res.reply(1000,222,454)
+   return res.reply(1001,222)
   }
 
 }

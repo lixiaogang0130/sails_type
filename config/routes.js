@@ -36,5 +36,6 @@ module.exports.routes = {
   'get /home':'test.home',
   'get /test1':'home.test',
   'get /home1':'home.home',
+  'get /user1':'user.single',
 
 };

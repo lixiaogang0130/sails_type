@@ -25,18 +25,4 @@ class Home extends CoreModule.CoreClass{
 export = new Home().exports()
 
 
-// export async function test(req:any,res:any):Promise<void>{
-//   let arr = [1232,32];
-//   // aad.each(arr,n=>{
-//   //   console.log(n)
-//   // });
-//   sails.config.globals._.each(arr,n=>{
-//     console.log(n);
-//   })
-//   console.log(sails.config.globals.moment().format('YYYY'));
-//   res.send(200)
-// }
-
-
-
 

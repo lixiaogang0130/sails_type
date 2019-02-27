@@ -1,7 +1,9 @@
 declare let sails: any;
 export module CoreModule{
   export class CoreClass {
+    //配置属性
     protected c: any = sails.config;
+    //helper工具,对应helpers内容
     protected h: any = sails.helpers;
     protected g: any = sails.config.globals;
     protected s: any = sails.services;
