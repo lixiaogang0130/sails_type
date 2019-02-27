@@ -1,0 +1,51 @@
+{
+  "pm2": true,
+  "appenders": {
+    "console": {
+      "type": "console"
+    },
+    "router": {
+      "type": "dateFile",
+      "filename": "./logging/router/router",
+      "pattern": "-yyyy-MM-dd.log",
+      "compress": true,
+      "alwaysIncludePattern": true
+    },
+    "error": {
+      "type": "dateFile",
+      "filename": "./logging/error/error",
+      "pattern": "-yyyy-MM-dd.log",
+      "compress": true,
+      "alwaysIncludePattern": true
+    },
+    "backup": {
+      "type": "dateFile",
+      "filename": "./logging/backup/backup",
+      "pattern": "-yyyy-MM-dd.log",
+      "compress": true,
+      "alwaysIncludePattern": true
+    }
+  },
+  "categories": {
+    "default": {
+      "appenders": ["console", "router"],
+      "level": "info"
+    },
+    "error": {
+      "appenders": ["console", "error"],
+      "level": "error"
+    },
+    "backup": {
+      "appenders": ["console", "backup"],
+      "level": "warn"
+    },
+    "debug": {
+      "appenders": ["console"],
+      "level": "debug"
+    },
+    "info": {
+      "appenders": ["console"],
+      "level": "info"
+    }
+  }
+}
